@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+@layer components {
+    .album-pr:nth-child(even) {
+        padding-right: 1.5rem;
+    }
+    .album-pr:nth-child(odd) {
+        padding-right: 0;
+    }
+
+    .album-pl:nth-child(even){
+        padding-left: 1.5rem;
+    }
+
+    .album-pl:nth-child(odd){
+        padding-left: 0;
+    }
+}
