@@ -6,20 +6,19 @@ Server Requirements
 
 The Laravel framework has a few system requirements. You should ensure that your web server has the following minimum PHP version and extensions:
 
-PHP >= 8.0
-BCMath PHP Extension
-Ctype PHP Extension
-cURL PHP Extension
-DOM PHP Extension
-Fileinfo PHP Extension
-JSON PHP Extension
-Mbstring PHP Extension
-OpenSSL PHP Extension
-PCRE PHP Extension
-PDO PHP Extension
-Tokenizer PHP Extension
-XML PHP Extension
-
+- PHP >= 8.0
+- BCMath PHP Extension
+- Ctype PHP Extension
+- cURL PHP Extension
+- DOM PHP Extension
+- Fileinfo PHP Extension
+- JSON PHP Extension
+- Mbstring PHP Extension
+- OpenSSL PHP Extension
+- PCRE PHP Extension
+- PDO PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
 
 Setting up project in local environment 
 
