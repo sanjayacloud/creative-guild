@@ -35,12 +35,6 @@ Go to project folder
 
 Install dependencies
 
-```bash
-composer install
-npm install
-```
-
-
 Create .env file from .env.example file. Then change the below variable value according to your value.
 
 ```bash
@@ -65,7 +59,6 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 ```bash
 composer install
-npm install
 ```
 
 ```bash
