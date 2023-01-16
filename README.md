@@ -78,3 +78,85 @@ npm run dev
 php artisan serve
 ```
 
+To access Photgrapher data RESTtFul APi
+
+Make token. Open Post men tool and send GET request to below API
+``{your-host.test}/api/v1/token``
+
+You will get the result like below
+
+``{ "token": "1|fzcS9qqjUW5LEE9eKM79mj3m4T7lVJ4t8m5h129D" }``
+
+copy that token value. Then make other get request. use above token as a Bearer Token. You can see it Authorization->Type. Change the type to  "Bearer Token" and put that token in token filed.
+
+``{your-host.test}/api/v1/photographer``
+
+You will get the result as below.
+
+
+``{
+"data": {
+"first_name": "Default",
+"last_name": "Default",
+"phone": "555-555-5555",
+"email": "default@example.net",
+"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+"profile_picture": null,
+"album": [
+{
+"id": 1,
+"photographer_id": 1,
+"title": "Nandhaka Pieris",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+"feature_img": "assets/img/album/landscape1.jpeg",
+"date": "2023-01-16",
+"featured": 1
+},
+{
+"id": 2,
+"photographer_id": 1,
+"title": "New West Calgary",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+"feature_img": "assets/img/album/landscape2.jpeg",
+"date": "2023-01-16",
+"featured": 0
+},
+{
+"id": 3,
+"photographer_id": 1,
+"title": "Australian Landscape",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+"feature_img": "assets/img/album/landscape3.jpeg",
+"date": "2023-01-16",
+"featured": 0
+},
+{
+"id": 4,
+"photographer_id": 1,
+"title": "Halvergate Marsh",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+"feature_img": "assets/img/album/landscape4.jpeg",
+"date": "2023-01-16",
+"featured": 1
+},
+{
+"id": 5,
+"photographer_id": 1,
+"title": "Rikkis Landscape",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+"feature_img": "assets/img/album/landscape5.jpeg",
+"date": "2023-01-16",
+"featured": 0
+},
+{
+"id": 6,
+"photographer_id": 1,
+"title": "Kiddi Kristjans Iceland",
+"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+"feature_img": "assets/img/album/landscape6.jpeg",
+"date": "2023-01-16",
+"featured": 1
+}
+]
+}
+}``
